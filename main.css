@@ -1,0 +1,58 @@
+li {
+    list-style-type: none;
+    display: inline;
+}
+span {
+    display: block;
+    border: 1px solid black;
+    margin: 25px;
+}
+.n-child section:nth-of-type(even) {
+    border: 1px solid black;
+}
+.top li:nth-of-type(n):after{
+    display: inline;
+    content: ",";
+}
+.n-type section:nth-of-type(odd){
+    color: blue;
+}
+.first-of-type aside:first-of-type{
+    background-color: lime;
+}
+.first-of-type section:first-of-type{
+    background-color: purple;
+}
+.three section:nth-of-type(n){
+    background-color: orange;
+}
+.three section:first-child {
+    background-color: goldenrod;
+}
+.three section:last-child{
+    background-color: darkslategray;
+}
+article:after{
+    content: "Article parent element";
+    border: 1px dashed grey;
+    background-color: royalblue;
+}
+.navbar li{
+    display: inline;
+    list-style-type: none;
+    margin: 2em;
+}
+.navbar a{
+    text-decoration: none;
+}
+.navbar a:hover{
+    color: white;
+}
+.navbar li:nth-of-type(n):hover{
+    background-color: black;
+}
+/* On active, grow 5px to the left and right */
+.navbar li:nth-of-type(n):active{
+    /*Can't figure this one out*/
+    width: calc(100% + 5px);
+}
